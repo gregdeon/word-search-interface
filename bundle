@@ -1,0 +1,3 @@
+echo "Creating bundle..."
+browserify lib/main.js -o bundle.js
+echo "Wrote bundle to bundle.js"

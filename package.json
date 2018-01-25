@@ -1,0 +1,28 @@
+{
+  "name": "crowdcurio-word-search",
+  "version": "0.1.0",
+  "description": "A word search for testing collaborative work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregdeon/TODO"
+  },
+  "keywords": [
+    "crowdcurio",
+    "game",
+    "collaboration"
+  ],
+  "author": "Greg d'Eon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregdeon/TODO"
+  },
+  "homepage": "https://github.com/gregdeon/TODO",
+  "dependencies": {
+    "jquery": "^1.11.1",
+    "crowdcurio-client": "^0.0.8"
+  }
+}
