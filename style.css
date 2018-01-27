@@ -1,7 +1,12 @@
+#task-container {
+    text-align: center;
+}
+
 #word-search-game {
     margin: auto;
     padding: 10px;
     display: flex;
+    display: inline-block;
 }
 
 .word-search-grid {
@@ -14,6 +19,7 @@
 */
     display: inline-block;
     float: left;
+    margin: 0px 10px;
 }
 
 .word-search-line {
@@ -59,9 +65,11 @@
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+    float: left;
     
     display: table;
     text-align: center;
+    
 }
 
 .word-search-word {
