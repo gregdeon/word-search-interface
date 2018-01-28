@@ -23,6 +23,6 @@
   "homepage": "https://github.com/gregdeon/TODO",
   "dependencies": {
     "jquery": "^1.11.1",
-    "crowdcurio-client": "^0.0.9"
+    "crowdcurio-client": "^0.1.0"
   }
 }

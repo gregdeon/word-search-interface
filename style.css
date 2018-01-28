@@ -5,7 +5,6 @@
 #word-search-game {
     margin: auto;
     padding: 10px;
-    display: flex;
     display: inline-block;
 }
 
@@ -17,28 +16,32 @@
     
     width: 1000px;
 */
-    display: inline-block;
+    white-space: nowrap;
     float: left;
     margin: 0px 10px;
 }
 
 .word-search-line {
-    
+}
+
+/* Hack for disabling CTRL-F on letters */
+.word-search-letter:before {
+    content: attr(protected-text);
 }
 
 .word-search-letter {
     display: inline-block;
     background-color: lightgrey;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     margin: 2px;
     
-    line-height: 40px;
+    line-height: 32px;
     text-align: center;
     vertical-align: middle;
     
     font-family: sans-serif;
-    font-size: 32px;
+    font-size: 24px;
     user-select: none;
 }
 
@@ -55,21 +58,49 @@
     background-color: #7fff7f;
 }
 
-/* For letters we currently have selected */
+/* For letters we currently have selected 
+   TODO: make this player-dependent 
+*/
 .letter-selected {
     background-color: #ff0000;
 }
 
-.word-search-wordlist {  
+.word-search-header {
     background-color: lightgrey;
-    margin: 10px;
+    padding: 0px 10px 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.word-search-header-item {
+    padding: 0px 10px;
+    display: flex;
+}
+
+.word-search-header-item * {
+    margin: 10px 1px;
+}
+
+.word-search-sidebox {
+    background-color: lightgrey;
     padding: 10px;
     border-radius: 10px;
     float: left;
-    
-    display: table;
+}
+
+.word-search-sidebox th,
+.word-search-sidebox td {
+    padding: 0px;
     text-align: center;
-    
+}
+
+.word-search-sidebox-th {
+    min-width: 90px;
+}
+
+#score-total {
+    font-weight: bold;
 }
 
 .word-search-word {
@@ -78,4 +109,66 @@
 
 .word-found {
     text-decoration: line-through;
+}
+
+/* Lobby styling */
+#lobby-container {
+    max-width: 800px;
+    margin: auto;
+    /*width: 100%;*/
+}
+
+.lobby-title {    
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lobby-line-p1,
+.lobby-line-p2,
+.lobby-line-p3
+ {
+    border-left-style: solid;
+    border-width: 20px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px;
+    overflow: auto;
+}
+
+.lobby-line-p1 {
+    background-color: #ff7f7f;
+    border-color: #ff0000;
+}
+
+.lobby-line-p2 {
+    background-color: #7f7fff;
+    border-color: #0000ff;
+}
+
+.lobby-line-p3 {
+    background-color: #7fff7f;
+    border-color: #00ff00;
+}
+
+.lobby-player,
+.lobby-ready {
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+.lobby-player {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.lobby-ready {
+    margin-left: 50%;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.lobby-buttons {
+    text-align:center;
 }
