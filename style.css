@@ -172,3 +172,7 @@
 .lobby-buttons {
     text-align:center;
 }
+
+#reset-button {
+    visibility: hidden;
+}
