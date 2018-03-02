@@ -5,7 +5,8 @@
 #word-search-game {
     margin: auto;
     padding: 10px;
-    display: inline-block;
+    display: flex;
+    width: 800px;
 }
 
 .word-search-grid {
@@ -88,7 +89,8 @@
     border-radius: 10px;
     /*float: left;*/
     width: 400px;
-    margin: auto;
+    /* Put an auto-sized margin on the bottom */
+    margin: 0 auto auto auto;
 }
 
 .word-search-sidebox th,
