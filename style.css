@@ -1,3 +1,18 @@
+:root {
+    /*
+    --p1-color: #ff7f7f;
+    --p2-color: #7f7fff;
+    --p3-color: #7fff7f;
+*/
+    --p1-color: #F39F9E;
+    --p2-color: #B0B0F0;
+    --p3-color: #96E696;
+
+    --p1-highlight: #710C0C;
+    --p2-highlight: #074D4D;
+    --p3-highlight: #24780B;
+}
+
 #task-container {
     text-align: center;
 }
@@ -48,15 +63,16 @@
 
 /* For letters that we've found */
 .letter-found-p1 {
-    background-color: #ff7f7f;
+/*    background-color: #ff7f7f;*/
+    background-color: var(--p1-color);
 }
 
 .letter-found-p2 {
-    background-color: #7f7fff;
+    background-color: var(--p2-color);
 }
 
 .letter-found-p3 {
-    background-color: #7fff7f;
+    background-color: var(--p3-color);
 }
 
 /* For letters we currently have selected 
@@ -142,18 +158,18 @@
 }
 
 .lobby-line-p1 {
-    background-color: #ff7f7f;
+    background-color: var(--p1-color);
     border-color: #ff0000;
 }
 
 .lobby-line-p2 {
-    background-color: #7f7fff;
+    background-color: var(--p2-color);
     border-color: #0000ff;
 }
 
 .lobby-line-p3 {
-    background-color: #7fff7f;
-    border-color: #00ff00;
+    background-color: var(--p3-color);
+    border-color: var(--p3-highlight);
 }
 
 .lobby-player,
@@ -222,15 +238,15 @@
 }
 
 .score-option-p1 {
-    background-color: #ff7f7f;
+    background-color: var(--p1-color);
 }
 
 .score-option-p2 {
-    background-color: #7f7fff;
+    background-color: var(--p2-color);
 }
 
 .score-option-p3 {
-    background-color: #7fff7f;
+    background-color: var(--p3-color);
 }
 
 .score-radio {
